@@ -1,0 +1,39 @@
+.jumbotron {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#questionPara {
+    display: inline-block;
+    margin-bottom: 0;
+}
+#question-input {
+    display: inline-block;
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    font-size: 30px;
+}
+#question-input + button {
+    position : relative;
+    bottom: 6px;
+    display: inline-block;
+    width: 60px;
+    height: 40px;
+    text-align: center;
+}
+.question {
+    position: relative;
+}
+form {
+    padding: 10px;
+}
+#answer-counting {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
