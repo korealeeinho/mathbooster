@@ -37,3 +37,6 @@ form {
     bottom: 10px;
     right: 20px;
 }
+#question-kind-wrap {
+    padding: 0 10px;
+}

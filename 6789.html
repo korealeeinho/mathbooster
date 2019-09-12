@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>하루 수학 - 하루에 조금씩</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+  <link href="css/main-css.css" rel="stylesheet">
+  <link href="css/multiply.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">하루 수학</div>
+      <div class="list-group list-group-flush">
+          <a href="index.html" class="list-group-item list-group-item-action bg-light">메인 화면</a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+      <!-- Page Nav -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="btn btn-primary" id="menu-toggle">메뉴</button>
+        <div class="dropdown dropleft">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  영역
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="곱셈.html">곱셈 구구</a>
+                  <a class="dropdown-item" href="2345.html">2,5,3,4단</a>
+                  <a class="dropdown-item active" href="6789.html">6,7,8,9단</a>
+                </div>
+              </div>
+      </nav>
+
+      <div class="container-fluid">
+        <div class="question jumbotron jumbotron-fluid">
+          <div id="question-kind-wrap">
+              <h2 id="question-kind"></h2>
+              <hr>
+          </div>
+          <form id="question-form">
+            <h1 id="questionPara"></h1>
+            <input id="question-input" type="text" autocomplete="off">
+            <button>입력</button>
+            <hr>
+            <h3 id="question-result">결과: </h3>
+            <h4 id="answer-counting"></h4>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/multiply-6789.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+</body>
+
+</html>
